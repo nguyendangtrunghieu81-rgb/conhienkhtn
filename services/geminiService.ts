@@ -47,7 +47,7 @@ export const sendMessageToGemini = async (message: string): Promise<string> => {
 
   try {
     const response = await aiClient.models.generateContent({
-      model: 'gemini-3-flash-preview',
+      model: 'gemini-2.5-flash',
       contents: message,
       config: {
         systemInstruction: SYSTEM_INSTRUCTION,
